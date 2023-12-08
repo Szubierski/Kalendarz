@@ -1,0 +1,151 @@
+* {
+    font-family: 'Segoe UI';
+    font-weight: 200;
+}
+
+#container {
+    margin: auto;
+    margin-top: 50px;
+    background-color: #252528;
+    box-shadow: 0 0 10px 2px black;
+    width: 400px;
+    height: 800px;
+}
+
+#mainDate {
+    padding:20px;
+    border-bottom: grey 1px solid;
+}
+
+#time {
+    color: white;
+    font-size: 55px;
+    padding: 0px;
+    margin: 0px;
+    cursor: default;
+}
+
+#actDate p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: #87CEFA;
+}
+
+#actDate p:hover {
+    color: #C0C0C0;
+    cursor: pointer;
+}
+
+#cal {
+    color: #FFFAFA;
+}
+
+#calHead {
+    padding: 0px 20px;
+    color: rgba(255, 255, 255, 0.781);
+    max-width: 180px;
+}
+
+#calHead:hover {
+    color: white;
+    cursor: default;
+}
+
+.arrows {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+#d1 {
+    transform: translate(340px, -40px);
+}
+#d1 i {
+    transform: rotate(90deg);
+    
+}
+
+#d2 {
+    transform: translate(280px, -40px);
+}
+
+#d2 i {
+    transform: rotate(-90deg);
+}
+
+#d1 i:hover, #d2 i:hover {
+    color: white;
+}
+
+#days {
+    width: 100%;
+    table-layout: fixed;
+    padding-bottom: 3px;
+    border-bottom: grey 1px solid;
+}
+
+#days .dayName {
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+#days .day {
+    text-align: center;
+    font-size: 17px;
+    padding: 12px 0px;
+    color: gray;
+}
+
+#days .day:hover {
+    outline: gray 3px solid;
+    cursor: default;
+}
+
+#days .goodMonth {
+    color: white;
+}
+
+#days .today {
+   background-color: #0080ff;
+   color: white;
+   font-weight: bold;
+}
+
+#days .today:hover {
+    outline: rgb(110, 197, 255) 3px solid;
+}
+
+#footer {
+    padding: 20px;
+    color: white;
+    font-weight: 400;
+    cursor: default;
+}
+
+#footer h3 {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#footer input {
+    margin-bottom: 20px;
+    background-color: #252528;
+    border: none;
+    outline: grey 1px solid;
+    height: 27px;
+    width: 98%;
+    padding-left: 7px;
+    font-weight: 400;
+}
+
+#footer input:focus {
+    background-color: white;
+    outline: #0080ff 1px solid;
+}

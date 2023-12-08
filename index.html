@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Kalendarz</title>
+</head>
+<body onload="czas()">
+    <div id="container">
+        <div id="mainDate">
+            <div id="time">00:00:00</div>
+            <div id="actDate"><p>poniedziałek, 1 Styczeń 0000</p></div>
+        </div>
+        <div id="cal">
+            <div id="calHead"><p>styczeń 0000</p></div>
+            <button class="arrows" id="d1"><i class="material-icons" onclick="plus()">arrow_forward_ios</i></button>
+            <button class="arrows" id="d2"><i class="material-icons" onclick="minus()">arrow_forward_ios</i></button>
+            <table id="days">
+                <thead>
+                    <tr>
+                        <td class="dayName">pon</td>
+                        <td class="dayName">wto</td>
+                        <td class="dayName">śro</td>
+                        <td class="dayName">czw</td>
+                        <td class="dayName">pią</td>
+                        <td class="dayName">sob</td>
+                        <td class="dayName">nie</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="footer">
+            <h3>Dzisiaj</h3>
+            <input type="text" placeholder="Dodaj zdarzenie lub przypomnienie"><br />
+            Brak zdarzeń
+        </div>
+    </div>
+</body>
+</html>
